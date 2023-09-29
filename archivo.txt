@@ -1,8 +1,0 @@
-Jose
-cambio 1
-cambio 2
-
-
-probando rama con git
-
-probar conexion con github
