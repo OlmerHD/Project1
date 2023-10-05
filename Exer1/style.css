@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+header {
+    min-height: 70px;
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: brown;
+}
+/*Resolucion minima como debe comportarse*/
+@media (max-width: 680px){
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 10px;
+    }
+}

@@ -1,4 +1,4 @@
-//Objeto literal
+//Objeto {} literal
 
 let personaje = {
     nombre: 'Jose Stark',
