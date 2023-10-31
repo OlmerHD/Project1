@@ -9,8 +9,45 @@
     <link rel="stylesheet" href="assets/css/styles.css" class="styles">
 </head>
 <body>
-    
 
+    <header class="titulo">
+        Blackjack
+    </header>
+
+
+    <div class="row mt-2">
+        <div class="col text-center">
+
+            <button class="btn btn-danger">Nuevo juego</button>
+            <button class="btn btn-primary">Pedir carta</button>
+            <button class="btn btn-primary">Detener</button>
+
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+
+            <h1>Jugador 1 -  <small>0</small> </h1>
+            <div id="jugador-cartas">
+                <img src="assets/cartas/10C.png" class="carta">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+
+            <h1>Computadora 1 -  <small>0</small> </h1>
+            <div id="computadora-cartas">
+                <img src="assets/cartas/10C.png" class="carta">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/underscore-min.js"></script>
     <script src="assets/js/game.js"></script>
 </body>
 </html>
