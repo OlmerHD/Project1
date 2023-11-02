@@ -26,7 +26,7 @@ const crearDeck = () => {
     }
 /*se llama libreria underscore con funcionalidades como shuffle para para reordenar elementos*/ 
 /*la libreria esta en underscore-min.js*/
-    console.log(deck);
+
     deck = _.shuffle(deck);
     console.log(deck);
     return deck;
@@ -35,3 +35,32 @@ const crearDeck = () => {
 
 crearDeck();
 
+
+//Esta funcion permite tomar una carta 
+const pedirCarta = () => {
+
+    if (deck === 0) {
+        throw 'No hay mas cartas';
+    }
+
+    const carta = deck.pop();
+
+    console.log(carta);
+    console.log(deck);
+    return carta;
+
+}
+
+//pedirCarta();
+
+
+const valorCarta = (carta) => {
+
+    const valor = carta.substring(0, carta.length - 1);
+    return (isNaN(valor)) ?
+            (valor === 'A') ? 11 : 10
+            : valor * 1;
+
+}
+
+console.log(valorCarta(pedirCarta())); 
