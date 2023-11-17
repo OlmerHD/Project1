@@ -1,0 +1,38 @@
+body {
+    margin:  0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+#containerBanner {
+    height: 400px;
+    background-image: url('img/banners/2.jfif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoPrincipal {
+    height: 70px;
+}
+
+#divLogo {
+    padding: 10px;
+}
+
+#divMenu {
+    padding: 10px;
+}
+
+.menuBanner {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.menuBanner:hover {
+    color: rgb(180, 12, 12);
+}
