@@ -1,55 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculadora con JavaScript</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
 </head>
-<body>
-    
-    <div class="container__calculator">
+<body onload="init();">
 
-        <form action="">
-            <input type="placeholder" value="" id="result">
+    <table class="calculadora">
+        <tr>
+            <td colspan="4">
+                <span id="resultado"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="siete">7</button>
+            </td>
+            <td>
+                <button id="ocho">8</button>
+            </td>
+            <td>
+                <button id="nueve">9</button>
+            </td>
+            <td>
+                <button id="division">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="cuatro">4</button>
+            </td>
+            <td>
+                <button id="cinco">5</button>
+            </td>
+            <td>
+                <button id="seis">6</button>
+            </td>
+            <td>
+                <button id="multiplicacion">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="uno">1</button>
+            </td>
+            <td>
+                <button id="dos">2</button>
+            </td>
+            <td>
+                <button id="tres">3</button>
+            </td>
+            <td>
+                <button id="resta">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="igual">=</button>
+            </td>
+            <td>
+                <button id="reset">C</button>
+            </td>
+            <td>
+                <button id="cero">0</button>
+            </td>
+            <td>
+                <button id="suma">+</button>
+            </td>
+        </tr>
+    </table>
 
-            <div class="container__numbers">
-                <input type="button" value="7" id="seven" class="numbers">
-                <input type="button" value="8" id="eight" class="numbers">
-                <input type="button" value="9" id="nine"  class="numbers">
-                <input type="button" value="4" id="four"  class="numbers">
-                <input type="button" value="5" id="five"  class="numbers">
-                <input type="button" value="6" id="six"   class="numbers">
-                <input type="button" value="1" id="one"   class="numbers">
-                <input type="button" value="2" id="two"   class="numbers">
-                <input type="button" value="3" id="three" class="numbers">
-                
-                <input type="button" value="." id="point" class="numbers">
-
-            </div>
-
-            <div>
-                <input type="button" value="C" id="ce">
-            </div>
-
-            <div>
-                <input type="button" value="0"  id="zero">
-            </div>
-
-            <div>
-                <input type="button" value="="  id="equal">
-            </div>
-
-            <div class="container__operators">
-                <input type="button" value="<" id="mayor" class="operators">
-                <input type="button" value="/" id="div"   class="operators">
-                <input type="button" value="x" id="por"   class="operators">
-                <input type="button" value="-" id="minus" class="operators">
-                <input type="button" value="+" id="mas"   class="operators">
-            </div>
-        </form>
-    </div>
-
-    <script src="./calculator.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>

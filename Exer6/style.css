@@ -1,61 +1,34 @@
-html {
-    background-color: cornflowerblue;
-    font-family: sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.container__calculator {
-    background-color: rgb(63, 59, 59);
-    width: 40%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#result {
-    height: 200%;
-    width: 20%;
-
-}
-
-.numbers {
-    font-size: 1rem;
-    height: -50%;
-    width: 25%;
-    border-radius: 100px;
-    background-color: yellowgreen;
-}
-
-.operators {
-    font-size: 1rem;
-    height: -50%;
-    width: 25%;
-    border-radius: 100px;
-    background-color: rgb(71, 56, 204);
-}
-
-#ce {
-    font-size: 1rem;
-    height: -50%;
-    width: 25%;
-    border-radius: 100px;
-    background-color: rgb(202, 79, 42);
-}
-
-#zero {
-    font-size: 1rem;
-    height: -50%;
-    width: 25%;
-    border-radius: 100px;
-    background-color: rgb(202, 79, 42);
-}
-
-#equal {
-    font-size: 1rem;
-    height: -50%;
-    width: 25%;
-    border-radius: 100px;
-    background-color: rgb(202, 79, 42);
-}
+.calculadora{
+    display:block;
+    margin:0 auto;
+    padding:20px;
+    background-color:#2980b9;
+    width:300px;
+    height:500px;
+    border-radius: 25px;
+  }
+  .calculadora td button{
+    display:block;
+    width:70px;
+    height: 70px;
+    font-size: 25px;
+  }
+  #creditos{
+    display:block;
+    padding-top:20px;
+    color:#fff;
+    text-align: center;
+    width:300px;
+  }
+  #resultado{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width:300px;
+    height: 100px;
+    line-height: 100px;
+    background-color:#fff;
+    border-radius: 25px;
+    /* overflow-y: scroll; */
+  }
