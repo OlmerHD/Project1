@@ -1,34 +1,65 @@
-.calculadora{
-    display:block;
-    margin:0 auto;
-    padding:20px;
-    background-color:#2980b9;
-    width:300px;
-    height:500px;
-    border-radius: 25px;
-  }
-  .calculadora td button{
-    display:block;
-    width:70px;
-    height: 70px;
-    font-size: 25px;
-  }
-  #creditos{
-    display:block;
-    padding-top:20px;
-    color:#fff;
-    text-align: center;
-    width:300px;
-  }
-  #resultado{
-    display:block;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    width:300px;
-    height: 100px;
-    line-height: 100px;
-    background-color:#fff;
-    border-radius: 25px;
-    /* overflow-y: scroll; */
-  }
+*{
+	box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to left, rgb(19, 98, 201), rgb(90, 51, 46));
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculadora table{
+	border-collapse: collapse;
+}
+
+#calculadora table{
+	height: 300px;
+}
+
+#calculadora button,
+#calculadora input{
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+	padding: 10px
+}
+
+#calculadora input{
+	padding: 15px;
+	color: white;
+	border: none;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+#calculadora input:focus{
+	outline: none;
+}
+
+#calculadora button{
+	background-color: rgba(0, 0, 0, .4);
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#calculadora button:hover{
+	background-color: rgba(0, 0, 0, .5);
+}
+
+#calculadora button:focus{
+	outline: none;
+}
+
+#calculadora button.operacion{
+	background-color: crimson;
+}
+
+#calculadora button.operacion#restar,
+#calculadora button.operacion#igual,
+#calculadora button.operacion#clear{
+	background-color: steelblue;
+}
