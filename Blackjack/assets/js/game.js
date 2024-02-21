@@ -7,7 +7,7 @@ S espadas
 
 
 //modo estricto 
-
+        
 
 (() => {
 
