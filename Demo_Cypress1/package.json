@@ -1,0 +1,22 @@
+{
+  "name": "demo_cypress1",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlmerHD/Project1.git"
+  },
+  "author": "JOHD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlmerHD/Project1/issues"
+  },
+  "homepage": "https://github.com/OlmerHD/Project1#readme",
+  "devDependencies": {
+    "cypress": "^13.6.6"
+  }
+}
