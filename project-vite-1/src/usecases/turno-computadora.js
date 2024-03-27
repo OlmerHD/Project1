@@ -1,4 +1,4 @@
-import { pedirCarta, valorCarta } from "./";
+import { crearCartaHTML, pedirCarta, valorCarta } from "../usecases";
 
 
 /**
@@ -8,7 +8,7 @@ import { pedirCarta, valorCarta } from "./";
  * @param {Array<String>} deck 
  */
 
-export const turnoComputadora = ( puntosMinimos, puntosHTML, deck = [] ) => {
+export const turnoComputadora = ( puntosMinimos, puntosHTML, divCartasComputadora, deck = [] ) => {
 
     if ( !puntosMinimos ) throw new Error('Puntos minimos son necesarios');
     if ( !puntosHTML ) throw new Error('Argumrto puntosHTML es necesario');
@@ -21,10 +21,7 @@ export const turnoComputadora = ( puntosMinimos, puntosHTML, deck = [] ) => {
         puntosComputadora = puntosComputadora + valorCarta( carta );
         puntosHTML.innerText = puntosComputadora;
         
-        // <img class="carta" src="assets/cartas/2C.png">
-        const imgCarta = document.createElement('img');
-        imgCarta.src = `assets/cartas/${ carta }.png`; //3H, JD
-        imgCarta.classList.add('carta');
+        const imgCarta = crearCartaHTML( carta );
         divCartasComputadora.append( imgCarta );
 
         if( puntosMinimos > 21 ) {
