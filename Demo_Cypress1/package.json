@@ -4,6 +4,7 @@
   "description": "Proyecto de pruebas",
   "main": "index.js",
   "scripts": {
+    "cypress:open": "cypress open",
     "pruebas-chrome": "npx cypress run --e2e Demo_Cypress1/cypress/e2e/smoke_testbanco.cy.js --browser chrome"
   },
   "repository": {
