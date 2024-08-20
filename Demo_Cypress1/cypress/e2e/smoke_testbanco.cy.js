@@ -33,8 +33,23 @@ describe("Test suite 1 - conjunto de pruebas", () => {
 
     }) 
 
+
     //Only para que solo se ejecute esa prueba
     it.only("Prueba de actualizacion del grafico", () => {
+
+        cy.get('#signin_button').click()
+        cy.get('#user_login').type('username')
+        cy.get('#user_password').type('password')
+        cy.get('.btn').click()
+        cy.get('#money_map_tab > a').click()
+        cy.get('#ext-sprite-1259').should('be.visible')
+        cy.get('#ext-sprite-1168').click()
+        cy.get('#ext-sprite-1259').should('not.be.visible')
+
+    })
+
+    //Copy used only
+    it.only("Prueba de actualización de gráfico_2", () => {
 
         cy.get('#signin_button').click()
         cy.get('#user_login').type('username')
